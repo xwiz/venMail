@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://kit.fontawesome.com/d5317be683.js" crossorigin="anonymous"></script>
+    <title>venMail</title>
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+  </head>
+  <body>
+
+    <!-- Back to top button -->
+<a id="toTopBtn"></a>
+    <!-- Header starts -->
+    <header class="navbar_wrapper">
+      <div class="navbar">
+        <div class="venmail_brand">
+          <a href="/"><img src="./assets/VenMail.png" /></a>
+        </div>
+        <menu class="primary_menu">
+          <ul>
+            <li>
+              <a class="menu_links" href="#about">About</a>
+            </li>
+            <li>
+              <a class="menu_links" href="#features">Features</a>
+            </li>
+            <li>
+              <a class="menu_links" href="#plans">Plans</a>
+            </li>
+            <li>
+              <a class="menu_links" href="#testimonial">Testimonial</a>
+            </li>
+            <li>
+              <a class="menu_links" href="#faq">Faqs</a>
+            </li>
+          </ul>
+        </menu>
+       
+        <div class="menu_btns">
+          <button type="button" class="btn_outline">Login</button>
+          <button type="button" class="btn_fill">Create Account</button>
+        </div>
+        <button onclick="openMobileMenu()" type="button" class="hamburger"><i class="fa-solid fa-bars-staggered"></i></button>
+        <!-- mobile menu -->
+        <menu id="mobile_menuID" class="mobile_menu">
+            <div class="mobile_close_container">
+                <button type="button"onclick='closeMobileMenu()' class="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul>
+              <li>
+                <a class="menu_links" href="#about">About</a>
+              </li>
+              <li>
+                <a class="menu_links" href="#features">Features</a>
+              </li>
+              <li>
+                <a class="menu_links" href="#plans">Plans</a>
+              </li>
+              <li>
+                <a class="menu_links" href="#testimonial">Testimonial</a>
+              </li>
+              <li>
+                <a class="menu_links" href="#faq">Faqs</a>
+              </li>
+            </ul>
+            <div class="mob_menu_btns">
+                <button type="button" class="btn_outline mob_btn_block">Login</button>
+                <button type="button" class="btn_fill mob_btn_block">Create Account</button>
+              </div>
+          </menu>
+      </div>
+    </header>
+
+    <!-- Hero Section starts -->
+
+    <div id="home" class="hero_section">
+      <div class="hero_section_container">
+        <div class="hero_section_img">
+          <img
+            class="ven_hero_img"
+            src="./assets/VenMailLaptop.png"
+            alt="venmail laptop"
+          />
+        </div>
+        <div class="hero_section_details">
+          <div class="hero_details">
+            <h2>
+              Simple, secure, smart, and easy to use
+              <span class="hero_details_emphasis">email for businesses</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim
+              luctus tellus arcu. Laoreet iaculis nisl gravida mollis sit erat
+              purus commodo. Lectus tristique aliquam ornare nibh ullamcorper
+              pharetra rhoncus.
+            </p>
+            <a href="#" class="btn_fill hero_btn">Get started</a>
+          </div>
+        </div>
+      </div>
+      <img class="hero_wave" src="./assets/Vector 1.png" />
+    </div>
+
+    <!-- ABOUT Section starts -->
+
+    <div id="about" class="about_section">
+      <div class="about_section_container">
+        <div class="about_details">
+          <div class="about_subheader">
+            <h5>About</h5>
+            <div class="blue_line"></div>
+          </div>
+          <h3>
+            A SaaS product designed to
+            <span class="about_details_emphasis">put your business first</span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim
+            luctus tellus arcu. Laoreet iaculis nisl gravida mollis sit erat
+            purus commodo. Lectus tristique aliquam ornare nibh ullamcorper
+            pharetra rhoncus.
+          </p>
+        </div>
+        <div class="about_section_img">
+          <img class="about_section_img" src="./assets/Image.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section starts -->
+    <div id="features" class="features_section">
+      <img class="about_wave" src="./assets/Vector 2.png" />
+      <div class="features_section_container">
+        <div class="features_boxes_container">
+          <div class="fbc1">
+            <div class="feature_box">
+              <i class="fa-solid fa-lock"></i>
+              <h5>Advanced Phishing & Email Protection</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Tristique diam.</p>
+            </div>
+            <div class="feature_box">
+              <i class="fa-solid fa-envelope"></i>
+              <h5>Custom Email Address For Your Business</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Tristique diam.</p>
+            </div>
+          </div>
+          <div class="fbc2">
+            <div class="feature_box">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <h5>Smart Spam Blocking System</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Tristique diam.</p>
+            </div>
+            <div class="feature_box">
+              <i class="fa-sharp fa-solid fa-rotate-left"></i>
+              <h5>Auto-Followup Functionality</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Tristique diam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="features_details">
+          <div class="about_subheader">
+            <h5>Unique Features</h5>
+            <div class="blue_line"></div>
+          </div>
+          <h3>Your number 1 go to emailing system for businesses</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim
+            luctus tellus arcu.
+          </p>
+          <button type="button" class="btn_fill">Get started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plans section starts-->
+    <div id="plans" class="plans_section">
+      <div class="plans_section_container">
+        <div class="plans_section_header">
+          <div class="plans_subheader">
+            <div class="plans_blue_line"></div>
+            <p class="plans">Plans</p>
+            <div class="plans_blue_line"></div>
+          </div>
+          <h3>Choose The Right Plan For Your Business</h3>
+          <p class="plans_description">
+            Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim
+            luctus tellus arcu.
+          </p>
+          <div class="plans_btn_group">
+            <button class="monthly_billing_btn">Monthly billing</button>
+            <button class="yearly_billing_btn">Yearly billing</button>
+          </div>
+        </div>
+        <div class="plan_cards_container">
+          <div class="plan_card">
+            <div class="plan_card_header">
+              <h4>STARTER-PLAN</h4>
+              <p>Starting at</p>
+              <h3>$2/<span class="price_mini">Month/User</span></h3>
+            </div>
+            <div class="plan_card_features">
+              <ul>
+                <li>1- 10 users</li>
+                <li>15gig per user</li>
+                <li>custom business email</li>
+                <li>smart spam protection</li>
+                <li>auto-followup enabled</li>
+                <li>email password protection</li>
+              </ul>
+            </div>
+            <a class="plan_card_btn" href="#">Get started</a>
+          </div>
+          <div class="plan_card popular">
+            <div class="plan_card_header">
+              <span class="most_popular">Most Popular</span>
+              <h4 style="color: white">PRO-PLAN</h4>
+              <p style="color: white">Starting at</p>
+              <h3 style="color: white">
+                $1.5/<span class="price_mini">Month/User</span>
+              </h3>
+            </div>
+            <div class="plan_card_features">
+              <ul>
+                <li style="color: white">1- 10 users</li>
+                <li style="color: white">15gig per user</li>
+                <li style="color: white">custom business email</li>
+                <li style="color: white">smart spam protection</li>
+                <li style="color: white">auto-followup enabled</li>
+                <li style="color: white">email password protection</li>
+              </ul>
+            </div>
+            <a
+              class="plan_card_btn"
+              style="color: #3c78d8; background-color: #fff"
+              href="#"
+              >Get started</a
+            >
+          </div>
+          <div class="plan_card">
+            <div class="plan_card_header">
+              <h4>MEGA-PLAN</h4>
+              <p>Starting at</p>
+              <h3>$1.2/<span class="price_mini">Month/User</span></h3>
+            </div>
+            <div class="plan_card_features">
+              <ul>
+                <li>1- 10 users</li>
+                <li>15gig per user</li>
+                <li>custom business email</li>
+                <li>smart spam protection</li>
+                <li>auto-followup enabled</li>
+                <li>email password protection</li>
+              </ul>
+            </div>
+            <a class="plan_card_btn" href="#">Get started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+      <!-- sample testimonial section-->
+      <!-- Swiper -->
+      <div id="testimonial" class="testimonial_section">
+    <div class="swiper mySwiper myswipe2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">  <figure class="testimonial_box">
+                <!-- <img src="./assets/quotes.png" alt="testimonial quotes" class="quote"> -->
+                <i class="fa-solid fa-quote-right"></i>
+                <p class="testimonial_comment">Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu. Laoreet iaculis nisl gravida mollis sit erat purus commodo. Lectus tristique aliquam ornare nibh ullamcorper pharetra rhoncus.</p>
+                <div class="testi_name">
+                    <h4>Natalia Grace</h4>
+                    <span>Daxl Consulting</span>
+                </div>
+    
+                
+                    <img src="./assets/testi.jpg" alt="" class="testi_img">
+                
+    
+            </figure></div>
+            <div class="swiper-slide">  <figure class="testimonial_box">
+                <!-- <img src="./assets/quotes.png" alt="testimonial quotes" class="quote"/> -->
+                <i class="fa-solid fa-quote-right"></i>
+                <p class="testimonial_comment">Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu. Laoreet iaculis nisl gravida mollis sit erat purus commodo. Lectus tristique aliquam ornare nibh ullamcorper pharetra rhoncus.</p>
+                <div class="testi_name">
+                    <h4>Natalia Grace</h4>
+                    <span>Daxl Consulting</span>
+                </div>
+    
+                
+                    <img src="./assets/testi.jpg" alt="" class="testi_img">
+                
+    
+            </figure></div>
+            <div class="swiper-slide">  <figure class="testimonial_box">
+                <!-- <img src="./assets/quotes.png" alt="testimonial quotes" class="quote"> -->
+                <i class="fa-solid fa-quote-right"></i>
+                <p class="testimonial_comment">Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu. Laoreet iaculis nisl gravida mollis sit erat purus commodo. Lectus tristique aliquam ornare nibh ullamcorper pharetra rhoncus.</p>
+                <div class="testi_name">
+                    <h4>Natalia Grace</h4>
+                    <span>Daxl Consulting</span>
+                </div>
+    
+                
+                    <img src="./assets/testi.jpg" alt="" class="testi_img">
+                
+    
+            </figure></div>
+            
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+    
+
+        <!-- FAQ section starts-->
+      <div id="faq" class="faq_section">
+        <img src="./assets/linecircleleft.png" alt="" class="faqcircle1">
+        <img src="./assets/linecircleright.png" alt="" class="faqcircle2">
+        <div class="faq_section_container">
+                <div class="faq_header">
+                    <h3>FAQs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu. </p>
+                </div>
+                <div class="faq_accordions_container">
+                    <div class="accordion-wrapper">
+                        <div class="accordion-header">
+                          <div class='header-container'>
+                            <p class=''>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu? </p>
+                            <button onclick="handleAccordion(0)" type="button" class='accordion-btn' >
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div id="accordion0" class='accordion-body '>
+                          <div class="faq_answer">
+                            <p>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcuLorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-wrapper">
+                        <div class="accordion-header">
+                          <div class='header-container'>
+                            <p class=''>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu? </p>
+                            <button onclick="handleAccordion(1)"  class='accordion-btn' >
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div id="accordion1" class='accordion-body '>
+                          <div class="faq_answer">
+                            <p>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcuLorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-wrapper">
+                        <div class="accordion-header">
+                          <div class='header-container'>
+                            <p class=''>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu? </p>
+                            <button onclick="handleAccordion(2)"  class='accordion-btn' >
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div id="accordion2" class='accordion-body '>
+                          <div class="faq_answer">
+                            <p>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcuLorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-wrapper">
+                        <div class="accordion-header">
+                          <div class='header-container'>
+                            <p class=''>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu? </p>
+                            <button onclick="handleAccordion(3)" class='accordion-btn' >
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div id="accordion3" class='accordion-body '>
+                          <div class="faq_answer">
+                            <p>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcuLorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+             
+        </div>
+      </div>
+
+      <!-- Blog section starts -->
+
+      <div id="blog" class="blog_section">
+        <div class="blog_section_container">
+            <div class="blog_header">
+                <p class="blog_subtitle">Our Blog</p>
+                <h5>Latest Blog</h5>
+            </div>
+            <div class="blog_body">
+                <div class="blog_card">
+                    <div class="blog_img_container">
+                        <img src="./assets/blog1.jpg" alt="blog post" class="blog_img">
+                    </div>
+                    <div class="blog_details">
+                            <p class="blog_date">Dec 1, 2022</p>
+                            <h5 class="blog_title">Security In The Business World</h5>
+                            <button class="blog_btn">Read More</button>
+                    </div>
+                </div>
+                <div class="blog_card">
+                    <div class="blog_img_container">
+                        <img src="./assets/blog2.jpg" alt="blog post" class="blog_img">
+                    </div>
+                    <div class="blog_details">
+                            <p class="blog_date">Dec 1, 2022</p>
+                            <h5 class="blog_title">Security In The Business World</h5>
+                            <button class="blog_btn">Read More</button>
+                    </div>
+                </div>
+                <div class="blog_card">
+                    <div class="blog_img_container">
+                        <img src="./assets/blog3.jpg" alt="blog post" class="blog_img">
+                    </div>
+                    <div class="blog_details">
+                            <p class="blog_date">Dec 1, 2022</p>
+                            <h5 class="blog_title">Security In The Business World</h5>
+                            <button href="#" type="button" class="blog_btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Subscribe to email section starts -->
+      <div id="newsletter" class="newsletter_section">
+        <div class="newsletter_section_container">
+            <div class="newsletter_header">
+                <span>Join Our Community</span>
+                <h5>Subscribe to our news letter</h5>
+                <p>Lorem ipsum dolor sit amet consectetur. Dis morbi mollis quam enim luctus tellus arcu. </p>
+            </div>
+            <div class="newsletter_body">
+              <div class="newsletter_input_container">
+                <input placeholder="enter email" type="text" id="newsletter_inputId" class="newsletter_input"> <button class="btn_fill" type="buttom">submit</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+       <!-- Footer section starts -->
+       <div id="footer" class="footer_section">
+        <footer class="footer_section_container">
+            <div class="footer_top">
+                <div class="footer_nav">
+                    <a href="/" class="footer_logo">
+                        <img alt="" src="./assets/VenMail.png"/>
+                    </a>
+                    <div class="footer_menu">
+                        <ul>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a href="#plans">Plans</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="#faqs">Faqs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_icons">
+                    <a href="instagram.com/venmail" class="ig_link social_links"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="facebook.com/venmail" class="facebook_link social_links"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="twitter.com/venmail" class="twitter_link social_links"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="linkedin.com/venmail" class="linkedin_link social_links"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>VenMail © 2022 . All Rights Reserved.</p>
+            </div>
+        </footer>
+       </div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
