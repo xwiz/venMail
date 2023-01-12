@@ -1,4 +1,4 @@
-const mobMenu= document.getElementById('mobile_menuID');
+const mobMenu = document.getElementById("mobile_menuID");
 
 // toggle accordion button
 const handleAccordion = (n) => {
@@ -6,39 +6,36 @@ const handleAccordion = (n) => {
   document.getElementById(elem).classList.toggle("show");
 };
 
-
 // OPEN & CLOSE MOBILE MENU
-const closeMobileMenu =()=>{
-mobMenu.style.display='none'
-}
+const closeMobileMenu = () => {
+  mobMenu.style.display = "none";
+};
 
-const openMobileMenu =()=>{
-    mobMenu.style.display='block'
-}
+const openMobileMenu = () => {
+  mobMenu.style.display = "block";
+};
 
 // swiper js
 
 var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-
-
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 //   scroll to top btn
 
-var btn = $('#toTopBtn');
+var btn = $("#toTopBtn");
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+    btn.addClass("show");
   } else {
-    btn.removeClass('show');
+    btn.removeClass("show");
   }
 });
 
-btn.on('click', function(e) {
+btn.on("click", function (e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
